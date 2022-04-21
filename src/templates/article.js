@@ -1,6 +1,7 @@
 import * as React from "react"
 import { graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
+import * as _ from "../styles/article.module.scss"
 
 const Article = props => {
   return (

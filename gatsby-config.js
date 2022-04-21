@@ -6,8 +6,6 @@ module.exports = {
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -24,6 +22,17 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-transformer-remark`,
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-image`,
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: `${__dirname}/src/images`,
+        },
+      },
+    },
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,

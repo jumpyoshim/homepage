@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import github from "../images/github.svg"
 import linkedin from "../images/linkedin.svg"
 import twitter from "../images/twitter.svg"
+import * as _ from "../styles/common.module.scss"
 
 const Footer = () => {
   return (
